@@ -16,7 +16,10 @@ from torch.utils.data import DataLoader
 import torch
 import torch.nn as nn
 import my_utils as utils
-
+import torchmetrics
+from torchmetrics import PeakSignalNoiseRatio
+psnr = PeakSignalNoiseRatio()
+psnr()
 #######
 
 '''
