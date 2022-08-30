@@ -1,0 +1,14 @@
+# ignore some files
+.idea/
+/Result/*
+/Result/
+**/Result/
+*.pyc
+*.png
+*.jpg
+*.log
+.DS_Store
+.log/
+/tmp/
+/data/
+.ipynb_checkpoints
