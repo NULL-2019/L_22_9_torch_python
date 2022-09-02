@@ -5,10 +5,21 @@
 
 # 列表
 
-test_a = ["hello",'world']
-str_a = str(test_a)
-print(str_a)
+# test_a = ["hello",'world']
+# str_a = str(test_a)
+# print(str_a)
+#
+# for i, j in enumerate(test_a):
+###############################################  一维列表转二维列表 #####################################
+# 	print(f"in {i} value is {j}")
+import math
+mylist = [1,2,3,4,5,6,7,8,9]
+temp = []
+if len(mylist)%int(math.sqrt(len(mylist)))==0:
 
-for i, j in enumerate(test_a):
-	print(f"in {i} value is {j}")
+	for idx in range (0,len(mylist),int(math.sqrt(len(mylist)))):
+		temp.append([mylist[i] for i in range(idx,idx+int(math.sqrt(len(mylist))))])
+
+
+print(temp)
 
